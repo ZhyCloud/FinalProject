@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="index.js"></script>
+
+    <title>Home page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+            <h2 class="logo">Haoyun Zhang's <span>Biography</span></h2>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="About.html" target="_blank">About me</a></li>
+                <li><a href="Education.html" target="_blank">Education</a></li>
+                <li><a href="Projects.html" target="_blank">Projects</a></li>
+                <li><a href="https://effulgent-rolypoly-c97b64.netlify.app/" target="_blank">Hobby</a></li>
+                <a href="https://www.linkedin.com/in/haoyun-zhang-196959214/" class="btn">Connect Me</a>
+            </ul>
+        </nav>
+
+        <article class="content">
+            <div>
+                <h4>Hello, my name is</h4>
+                <h1>Haoyun <span>Zhang</span></h1>
+                <h3>I am a graduate student in computer science at Boston University.</h3>
+            </div>
+
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Lets Start">
+                </form>
+            </div>
+
+            <div class="formWrapper">
+                <h1 id="title">Submit your information</h1>
+                <form name="PjForm" action="https://bucs601.com/submit.php" method="post" novalidate onsubmit="return validateForm()">
+                    <div id="rowA">
+                        <label for="firstName">Your first name (required):</label>
+                        <input type="text" placeholder="Haoyun" name="firstName" id="firstName" required>
+                    </div>
+                    <div id="rowB">
+                        <label for="lastName">Your last name (required):</label>
+                        <input type="text" placeholder="Zhang" name="lastName" id="lastName" required>
+                    </div>
+                    <div id="rowC">
+                        <label for="linkedin">Your Linkedin:</label>
+                        <input type="text" placeholder="linkedin.com" name="linkedin" id="linkedin" required>
+                    </div>
+                    <div id="validtxt">
+                        <p id="validA"></p>
+                        <p id="validB"></p>
+                    </div>
+                    <div id="rowD">
+                        <p>What is your gender?</p>
+                        <p>
+                            <input type="radio" name="radioMessageType" value="man" checked>Man <br/>
+                            <input type="radio" name="radioMessageType" value="woman">Woman <br/>
+                            <input type="radio" name="radioMessageType" value="donot say">Don't want to say. <br/>
+                        </p>
+                    </div>
+                    <div id="rowE">
+                        <p>What is your favorite programming language?</p>
+                        <p>
+                            <input type="checkbox" name="language1" value="python">Python <br/>
+                            <input type="checkbox" name="language2" value="java">Java <br/>
+                            <input type="checkbox" name="language3" value="c">C <br/>
+                            <input type="checkbox" name="language4" value="javascript">Javascript <br/>
+                            <input type="checkbox" name="language5" value="others">Other languages <br/>
+                        </p>
+                    </div>
+                    <div id="rowF">
+                        <input type="submit" id="submit" value="Submit" style='width:100px;margin:0 50%;position:relative;left:-50px;'>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <aside class="side">
+            <div>
+                <h2>Self-introduction</h2>
+                <!-- <img src="images/HaoyunZhang.jpeg" alt="Haoyun Zhang's Picture" width="190"> -->
+                <!--use a table to create a brief introduction-->
+                <div class="T">
+                    <img src="images/HaoyunZhang.jpeg" alt="Haoyun Zhang's Picture" width="190">
+                </div>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Haoyun Zhang</td>
+                    </tr>
+                    <tr>
+                        <td>Sex</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Boston MA</td>
+                    </tr>
+                    <tr>
+                        <td>Linkedin</td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/haoyun-zhang-196959214/">Profile</a>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </aside>
+
+        <div class="ad">
+            <p>As a BU student who will graduate in December, I'm confident in the software engineering job market.
+                If anyone knows opening for new grad or entry-level software engineering roles, please contact me via LinkedIn or email (haoyunzhang.1st@gmail.com).</p>
+        </div>
+
+        <footer class="main-footer">
+            <div id="foot">
+                <p>This is my term project of cs601!</p>
+                <a href="https://github.com/ZhyCloud?tab=projects&type=beta">Know more about me!</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
